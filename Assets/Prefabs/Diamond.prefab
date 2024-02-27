@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196823582604937345}
   - component: {fileID: 1579061814419781014}
-  - component: {fileID: 8085589887565811107}
+  - component: {fileID: 8045158306596266062}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -53,9 +53,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Size: {x: 0.4, y: 0.4, z: 0.4}
   m_Center: {x: -1.52, y: 0.4, z: 0}
---- !u!114 &8085589887565811107
+--- !u!114 &8045158306596266062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,9 +64,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100648070736375366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba59cdfe47390bd45adfe2a35f5578d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c8781630cf5ec54f8792389bd7a5a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  theScore: 0
+  collectSound: {fileID: 0}
 --- !u!1001 &821928160461575445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +134,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011097900018, guid: 676e107eeafc5524b97910d76516565d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d3fdd53a2b5dd904fad8d824266a4cad, type: 2}
     - target: {fileID: 114000012194588374, guid: 676e107eeafc5524b97910d76516565d, type: 3}
       propertyPath: floatRate
       value: 0
