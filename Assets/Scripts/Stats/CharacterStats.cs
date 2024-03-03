@@ -34,6 +34,7 @@ public class CharacterStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             Death();
+            FindObjectOfType<GameManager>().EndGame(); // To End Game
         }
     }
 
