@@ -5,25 +5,11 @@ using UnityEngine.UI;
 
 public class ScoringSystem : MonoBehaviour
 {
-    public static ScoringSystem instance;
+    public GameObject scoreText;
+    public static int theScore = 0;
 
-    public Text scoreText;
-    int score = 0;
-
-    private void Awake()
+    void Update()
     {
-        instance = this;
+        scoreText.GetComponent<Text>().text = "Score: " + theScore;
     }
-
-    private void Start()
-    {
-        scoreText.text = score.ToString() + " Points";
-    }
-
-    public void AddPoint()
-    {
-        score += 50;
-        scoreText.text = score.ToString() + " Points";
-    }
-
 }

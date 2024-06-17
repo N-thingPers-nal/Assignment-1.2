@@ -14,12 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: f28d42ff1c2ac6942b8da242dddc7e64
+  - enabled: 0
+    path: Assets/Scenes/Delete.unity
+    guid: 09d1656735b24064b9bef723fd45b59d
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
-    guid: 09d1656735b24064b9bef723fd45b59d
+    guid: 3e113643188173146a943861874bf145
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: d4e688616dfd8214a94c433658b0b665
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 78ae7f77d4bebff4fb209819294f91a6
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

@@ -9,7 +9,7 @@ interface IInteractable
 public class Interactables : MonoBehaviour
 {
     //public Transform InteractorSource;
-    public float InteractRange;
+    public float InteractRange = 6f;
     public Transform InteractionTransform;
 
     bool isFocus = false;
@@ -19,7 +19,7 @@ public class Interactables : MonoBehaviour
 
     public virtual void Interact() // enables different interactable outcomes for each type
     {
-        Debug.Log("INTERACTING WITH " + transform.name);
+        //Debug.Log("INTERACTING WITH " + transform.name);
     }
 
     private void Update()

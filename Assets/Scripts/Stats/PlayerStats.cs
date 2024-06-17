@@ -25,4 +25,9 @@ public class PlayerStats : CharacterStats
             }
         
         } */
+    public override void Death()
+    {
+        base.Death();
+        PlayerManager.instance.KillPlayer();
+    }
 }

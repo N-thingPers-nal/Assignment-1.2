@@ -1,7 +1,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerMotor))]
+//[RequireComponent(typeof(PlayerMotor))]
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        motor = GetComponent<PlayerMotor>();
+       motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             // Create a ray
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
